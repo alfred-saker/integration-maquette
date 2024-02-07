@@ -1,0 +1,104 @@
+.container a{
+    text-decoration: none;
+}
+.rotate-horizontal{
+    transform: translateX(40px) translateY(50px) rotate(-90deg);
+}
+.rotate-horizontal1,.rotate-horizontal2{
+    transform: translateX(40px) translateY(50px) rotate(-90deg);
+    margin-top: 2em;
+    margin-right: 2em;
+}
+.section1 .row{
+    margin-left: 8em;
+}
+.year1,.year2, .year3 {
+    border: none;
+    border-top: 3px solid #333;
+    color: #33333300;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width:900px;
+}
+  
+.year1::after {
+background: #fff;
+content: 'Année 1&2';
+padding: 0 4px;
+position: relative;
+top: -13px;
+color: black;
+}
+.year2::after {
+background: #fff;
+content: 'Année 3';
+padding: 0 4px;
+position: relative;
+top: -13px;
+color: black;
+}
+.year3::after {
+background: #fff;
+content: 'Année 4&5';
+padding: 0 4px;
+position: relative;
+top: -13px;
+color: black;
+}
+
+.last-level{
+    display: flex;
+    flex-wrap: wrap;
+}
+.last-level .main_section{
+    width: 60%;
+    margin-right:1em ;
+}
+.special-block{
+    display: none;
+}
+.rounded img{
+    width:10%;
+}
+
+@media screen and (max-width:650px){
+    .rotate-horizontal,.rotate-horizontal1,.rotate-horizontal2 {
+        transform: translateX(0px) translateY(0px) rotate(0);
+        margin: 0 auto;
+    }
+    .year1,.year2, .year3 {
+        border: none;
+        border-top: 3px solid #333;
+        color: #33333300;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        width:100%;
+    }
+    .section1 .row{
+        margin-left:0;
+        width: 100%;
+        padding: 0;
+    }
+    .last-level .main_section{
+        width: 100%;
+        margin-right:0 ;
+    }
+    .last-level .lock_alone{
+        width: 100%;
+        margin-right:0 ;
+    }
+    .special-block{
+        display: block;
+    }
+    .one_block{
+        width: 100%;
+    }
+    .rounded .div-img{
+       display: block;
+       text-align: right;
+    }
+}
+
+
